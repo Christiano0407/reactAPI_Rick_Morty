@@ -1,7 +1,7 @@
 import React from "react";
 //import { useState, useEffect } from "react";
 import styled from "styled-components";
-import "./App.css";
+//import "./App.css";
 import { CharacterList } from "./components/CharacterList";
 import { Character } from "./components/Character";
 
@@ -9,14 +9,15 @@ import { Character } from "./components/Character";
 const Title = styled.h1`
   font-size: 40px;
   font-weight: bold;
-  color: #333;
+  color: #fff;
   margin: 20px auto;
   text-align: center;
+  padding: 10px;
 `;
 //*TODO ==== APP ===== */
 function App() {
   return (
-    <div className="App">
+    <div className="bg-dark text-white">
       <Title>Rick and Morty</Title>
       <CharacterList />
       <Character />
